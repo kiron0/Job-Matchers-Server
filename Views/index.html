@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
           <meta charset="UTF-8">
@@ -8,16 +8,34 @@
           <script src="https://cdn.tailwindcss.com"></script>
           <link href="https://cdn.jsdelivr.net/npm/daisyui@2.6.0/dist/full.css" rel="stylesheet" type="text/css" />
           <title>Index - Job Matchers</title>
+          <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+                    body {
+                              font-family: 'Poppins', sans-serif;
+                    }
+          </style>
 </head>
 
-<body class="flex flex-col justify-center items-center h-screen">
-          <div class="avatar mb-8">
-                    <div class="w-48 md:w-72 mask mask-hexagon">
-                              <img src="https://i.ibb.co/7vgbS1q/kiron3-modified.png" />
+<body class="bg-black">
+          <div class="flex flex-col justify-center items-center h-screen">
+                    <div class="avatar mb-8">
+                              <div
+                                        class="w-48 md:w-72 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                                        <a href="https://toufiqhasan.me/" target="_blank">
+                                                  <img src="https://i.ibb.co/7vgbS1q/kiron3-modified.png" />
+                                        </a>
+                              </div>
                     </div>
+                    <span class="text-white mt-[-20px] mb-8">Toufiq Hasan Kiron</span>
+                    <h1 class="flex justify-center items-center text-3xl lg:text-5xl text-white">Hello, Job Matchers API
+                    </h1>
+                    <a href="https://github.com/kiron0" target="_blank" class="btn btn-primary w-52 mt-8 mb-3">Follow Me
+                              On
+                              GitHub</a>
+                    <a href="https://job-matchers.web.app/" target="_blank" class="btn btn-neutral w-44">Client Site
+                              Live</a>
           </div>
-          <h1 class="flex justify-center items-center text-3xl lg:text-5xl text-white">Hello, Job Matchers</h1>
-          <a href="https://github.com/kiron0" target="_blank" class="btn btn-primary w-48 my-8">Follow On GitHub</a>
 </body>
 
 </html>

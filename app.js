@@ -12,8 +12,6 @@ const meRouter = require("./Routes/index.route.js");
 app.use(cors());
 app.use(express.json());
 
-app.set("view engine", "ejs");
-
 /* ALL ENDPOINTS PUTTING HERE  */
 
 app.use("/users", usersRouter);

@@ -8,7 +8,7 @@ const getUsers = async (req, res) => {
   } else {
     res.status(403).send({
       success: false,
-      message: "You are not Authorized to perform this action",
+      message: "You are not authorized to perform this action",
     });
   }
 };

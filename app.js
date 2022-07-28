@@ -21,19 +21,19 @@ app.use("/team", kironRouter);
 app.use("/", meRouter);
 
 /* testing api  */
-// app.get("/", (req, res) => {
-//   res.send({ success: true, message: "Welcome to the API" });
-// });
+app.get("/", (req, res) => {
+  res.send({ success: true, message: "Welcome to the API" });
+});
 
 /* not found routes */
 app.use((req, res, next) => {
   res.status(404).send({ success: false, message: "Not Found Route" });
 });
 /* Server Error Routes */
-// app.use((err, req, res, next) => {
-//   res
-//     .status(500)
-//     .send({ success: false, message: "Something Broke of your API" });
-// });
+app.use((err, req, res, next) => {
+  res
+    .status(500)
+    .send({ success: false, message: "Something Broke of your API" });
+});
 
 module.exports = app;

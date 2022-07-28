@@ -7,14 +7,18 @@ const app = express();
 
 const usersRouter = require("./Routes/users.route.js");
 const kironRouter = require("./Routes/kiron.route.js");
+const meRouter = require("./Routes/index.route.js");
 /* Set Middle wares  */
 app.use(cors());
 app.use(express.json());
+
+app.set("view engine", "ejs");
 
 /* ALL ENDPOINTS PUTTING HERE  */
 
 app.use("/users", usersRouter);
 app.use("/team", kironRouter);
+app.use("/", meRouter);
 
 /* testing api  */
 app.get("/", (req, res) => {

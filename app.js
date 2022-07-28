@@ -21,9 +21,9 @@ app.use("/team", kironRouter);
 app.use("/", meRouter);
 
 /* testing api  */
-// app.get("/", (req, res) => {
-//   res.send({ success: true, message: "Welcome to the API" });
-// });
+app.get("/", (req, res) => {
+  res.send({ success: true, message: "Welcome to the API" });
+});
 
 /* not found routes */
 app.use((req, res, next) => {
